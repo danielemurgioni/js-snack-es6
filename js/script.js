@@ -34,3 +34,25 @@ for(let i=0; i<shop.length; i++){
 }
 
 console.log(lessHeavy);
+
+/*------------------------------------------------------*/
+
+const football = [
+    {
+        nome: "Squadra di Gianni",
+        goals: 0,
+        fouls: 0
+    },
+    {
+        nome: "Squadra di Piero",
+        goals: 0,
+        fouls: 0
+    },
+    {
+        nome: "Squadra di Vittorio",
+        goals: 0,
+        fouls: 0
+    },
+]
+
+console.log(football);
