@@ -57,12 +57,20 @@ const football = [
 
 console.log(football);
 
+// creo un nuovo array e pusho all'interno i nomi e falli delle squadre tramite il FOR creato poco fa
+
+let footballFouls = []
+
+
 //con un ciclo FOR vado a cambiare alcune caratteristiche delle squadre: falli e goal con dei numeri casuali con l'uso di una funzione
 
 for(let i=0; i<football.length; i++){
+    footballFouls.push(football[i].nome)
     football[i].goals = RNG(1,10)
-    football[i].fouls = RNG(1,10)
+    footballFouls.push(football[i].fouls = RNG(1,10))
 }
+
+console.log(footballFouls)
 
 //Function RNG
 
