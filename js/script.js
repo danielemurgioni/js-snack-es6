@@ -56,3 +56,16 @@ const football = [
 ]
 
 console.log(football);
+
+//con un ciclo FOR vado a cambiare alcune caratteristiche delle squadre: falli e goal con dei numeri casuali con l'uso di una funzione
+
+for(let i=0; i<football.length; i++){
+    football[i].goals = RNG(1,10)
+    football[i].fouls = RNG(1,10)
+}
+
+//Function RNG
+
+function RNG(min, max){
+    return Math.floor(Math.random() * (max - min) + min);
+};
